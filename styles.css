@@ -52,7 +52,7 @@ header .left-header {
 
 header .right-header {
   background-color: #F9FAFB;
-  flex-grow: 2;
+  flex-grow: 4;
 
   height: 100vh;
 }
