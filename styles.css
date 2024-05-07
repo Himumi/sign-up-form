@@ -14,16 +14,18 @@ header {
 }
 
 header .left-header {
-  flex-grow: 0;
-}
+  flex-grow: 1;
+  background-image: url("images/green-leaf.jpg");
+  background-size: cover;
 
-header .left-header img {
   height: 100vh;
 }
 
 header .right-header {
   background-color: #F9FAFB;
-  flex-grow: 1;
+  flex-grow: 2;
+
+  height: 100vh;
 }
 
 header .right-header div {
