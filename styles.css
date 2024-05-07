@@ -1,0 +1,36 @@
+@font-face {
+  font-family: norsebold;
+  src: url("font/Norse-Bold.otf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: norsebold;
+}
+
+header {
+  display: flex;
+}
+
+header .left-header {
+  flex-grow: 0;
+}
+
+header .left-header img {
+  height: 100vh;
+}
+
+header .right-header {
+  background-color: #F9FAFB;
+  flex-grow: 1;
+}
+
+header .right-header div {
+  height: 30%;
+}
+
+header .right-header form {
+  height: 40%;
+  background-color: white;
+}
