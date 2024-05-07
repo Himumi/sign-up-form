@@ -18,7 +18,7 @@ header {
 }
 
 header .left-header {
-  flex-grow: 1;
+  flex-grow: 2;
   background-image: url("images/green-leaf.jpg");
   background-size: cover;
 
@@ -69,7 +69,7 @@ header .left-header {
 
 header .right-header {
   background-color: #F9FAFB;
-  flex-grow: 4;
+  flex-grow: 3;
 
   height: 100vh;
 }
