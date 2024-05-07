@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: norsebold;
 }
 
 a {
@@ -50,6 +49,7 @@ header .left-header {
 .logo p {
   color: white;
 
+  font-family: norsebold;
   font-size: 5em;
   margin: auto 0;
 }
