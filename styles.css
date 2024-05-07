@@ -75,6 +75,8 @@ header .right-header {
 
 .right-header div {
   height: 30%;
+  padding-left: 50px;
+  padding-top: 35px;
 }
 
 .right-header div:first-child {
@@ -82,7 +84,6 @@ header .right-header {
   flex-flow: column;
   justify-content: flex-end;
 
-  margin-left: 50px;
 }
 
 .right-header div p {
@@ -91,7 +92,7 @@ header .right-header {
   margin-bottom: 8px;
 }
 
-.right-header div p:last-child {
+.right-header .texts p:last-child {
   margin-top: 25px;
   margin-bottom: 55px;
 }
@@ -99,4 +100,34 @@ header .right-header {
 .right-header form {
   height: 40%;
   background-color: white;
+}
+
+.right-header button {
+  width: 200px;
+  padding: 15px 10px;
+
+  font-size: 1em;
+  font-weight: bold;
+
+  border: none;
+  border-radius: 5px;
+
+  color: white;
+  background-color: #5A6D49;
+  box-shadow: 3px 3px 6px 0px rgb(0 0 0 / 20%);
+}
+
+.right-header button:hover {
+  cursor: pointer;
+}
+
+.right-header button + p{
+  margin-top: 30px;
+  font-size: 1.1em;
+}
+
+.right-header button + p a {
+  color: #5A6D49;
+
+  text-decoration: none;
 }
