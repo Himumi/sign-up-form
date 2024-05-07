@@ -14,18 +14,17 @@ a {
 
 header {
   display: flex;
+  height: 100vh;
 }
 
 header .left-header {
   flex-grow: 2;
   background-image: url("images/green-leaf.jpg");
   background-size: cover;
-
-  height: 100vh;
 }
 
 .left-header .logo-container {
-  height: 30%;
+  height: 35%;
   display: flex;
   align-items: flex-end;
 }
@@ -54,7 +53,7 @@ header .left-header {
 }
 
 .left-header .credit {
-  height: 70%;
+  height: 65%;
 
   display: flex;
   justify-content: center;
@@ -69,12 +68,10 @@ header .left-header {
 header .right-header {
   background-color: #F9FAFB;
   flex-grow: 3;
-
-  height: 100vh;
 }
 
 .right-header div {
-  height: 30%;
+  height: 35%;
   padding-left: 50px;
   padding-top: 35px;
 }
@@ -98,7 +95,7 @@ header .right-header {
 }
 
 .right-header form {
-  height: 40%;
+  height: 30%;
   background-color: white;
 }
 
