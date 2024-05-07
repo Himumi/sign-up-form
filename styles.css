@@ -9,6 +9,10 @@
   font-family: norsebold;
 }
 
+a {
+  color: white;
+}
+
 header {
   display: flex;
 }
@@ -48,6 +52,19 @@ header .left-header {
 
   font-size: 5em;
   margin: auto 0;
+}
+
+.left-header .credit {
+  height: 70%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.credit p {
+  color: white;
+  margin-bottom: 10px;
 }
 
 header .right-header {
