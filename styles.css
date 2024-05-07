@@ -21,6 +21,35 @@ header .left-header {
   height: 100vh;
 }
 
+.left-header .logo-container {
+  height: 30%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.left-header .logo {
+  height: 15vh;
+  width: 100%;
+
+  background-color: black;
+  opacity: 0.6;
+
+  display: flex;
+  justify-content: center;
+  align-content: stretch;
+}
+
+.logo img {
+  margin: 15px;
+}
+
+.logo p {
+  color: white;
+
+  font-size: 5em;
+  margin: auto 0;
+}
+
 header .right-header {
   background-color: #F9FAFB;
   flex-grow: 2;
