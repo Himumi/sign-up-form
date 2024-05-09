@@ -66,4 +66,34 @@
     </div>
   </header>
 </body>
+
+<script>
+  pass = document.querySelector("#password");
+  confirmPass = document.querySelector("#confirm-password");
+  msg = document.querySelector(".wrong-password-msg");
+
+  confirmPass.addEventListener("input", () => {
+    if (pass.value != confirmPass.value) {
+      msg.style.opacity = 1;
+      pass.style.borderColor = "#C8524A";
+      confirmPass.style.borderColor = "#C8524A";
+      return;
+    }
+    pass.style.borderColor = "#D4D4D4";
+    confirmPass.style.borderColor = "#D4D4D4";
+    msg.style.opacity = 0;
+  });
+
+  pass.addEventListener("input", () => {
+    if (pass.value != confirmPass.value) {
+      msg.style.opacity = 1;
+      pass.style.borderColor = "#C8524A";
+      confirmPass.style.borderColor = "#C8524A";
+      return;
+    }
+    pass.style.borderColor = "#D4D4D4";
+    confirmPass.style.borderColor = "#D4D4D4";
+    msg.style.opacity = 0;
+  });
+</script>
 </html>
