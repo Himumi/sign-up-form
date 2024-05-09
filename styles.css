@@ -8,6 +8,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color: #2457D8;
+  --passColor: #D4D4D4;
+}
+
 a {
   color: white;
 }
@@ -147,8 +152,17 @@ ul li input[type="password"] + label {
   font-size: 0.8em;
 }
 
-form ul li input:focus {
-  border-color: #2457D8;
+ul li #password,
+ul li #confirm-password {
+  border-color: var(--passColor);
+}
+
+form ul li input:focus,
+ul li #password:focus,
+ul li #confirm-password:focus {
+  border-color: var(--color);
+
+  box-shadow: 3px 3px 5px 0px rgb(0 0 0 / 20%);
 }
 
 form ul li input:invalid {

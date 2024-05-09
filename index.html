@@ -68,32 +68,24 @@
 </body>
 
 <script>
-  pass = document.querySelector("#password");
-  confirmPass = document.querySelector("#confirm-password");
-  msg = document.querySelector(".wrong-password-msg");
+  const passwords = document.querySelectorAll("input[type='password']");
+    
+  passwords.forEach((password) => {
+    password.addEventListener("input", () => {
+      const pass = document.querySelector("#password");
+      const confirmPass = document.querySelector("#confirm-password");
+      const msg = document.querySelector(".wrong-password-msg");
 
-  confirmPass.addEventListener("input", () => {
-    if (pass.value != confirmPass.value) {
-      msg.style.opacity = 1;
-      pass.style.borderColor = "#C8524A";
-      confirmPass.style.borderColor = "#C8524A";
-      return;
-    }
-    pass.style.borderColor = "#D4D4D4";
-    confirmPass.style.borderColor = "#D4D4D4";
-    msg.style.opacity = 0;
-  });
-
-  pass.addEventListener("input", () => {
-    if (pass.value != confirmPass.value) {
-      msg.style.opacity = 1;
-      pass.style.borderColor = "#C8524A";
-      confirmPass.style.borderColor = "#C8524A";
-      return;
-    }
-    pass.style.borderColor = "#D4D4D4";
-    confirmPass.style.borderColor = "#D4D4D4";
-    msg.style.opacity = 0;
+      if (pass.value != confirmPass.value) {
+        msg.style.opacity = 1;
+        document.documentElement.style.setProperty("--color", "#C8524A");
+        document.documentElement.style.setProperty("--passColor", "#C8524A");
+        return;
+      }
+      document.documentElement.style.setProperty("--color", "#2457D8");
+      document.documentElement.style.setProperty("--passColor", "#D4D4D4");
+      msg.style.opacity = 0;
+    });
   });
 </script>
 </html>
