@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="left-header">
+      <div class="logo-container">
+        <div class="logo">
+          <img src="images/odin-lined.png" alt="odin-lined-logo">
+          <p>ODIN</p>
+        </div>
+      </div>
+      <div class="credit">
+        <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com">Unsplash</a></p>
+      </div>
+    </div>
+
+    <div class="right-header">
+      <div class="texts">
+        <p>This is not a real online service! You know you need something</p>
+        <p>like this in your life to help you realize your deepst dreams.</p>
+        <p>Sign up <i>now</i> to get started.</p>
+        <p>You <i>know</i> you want to.</p>
+      </div>
+      <form action="#" method="get">
+        <p>Let's do this!</p>
+        <ul>
+          <li>
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name">
+          </li>
+          <li>
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+          </li>
+          <li>
+            <label for="phone-number">Phone Number</label>
+            <input type="number" id="phone-number" name="phone-number">
+          </li>
+          <li> 
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+            <label for="password" class="wrong-password-msg">* Password do not match</label>
+          </li>
+          <li>
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password">
+          </li>
+        </ul>
+      </form>
+      <div>
+        <button type="submit">Create Account</button>
+        <p>
+          Already have an account? <a href="#">Log in</a>
+        </p>
+      </div>
+    </div>
+  </header>
+</body>
+
+<script>
+  const passwords = document.querySelectorAll("input[type='password']");
+    
+  passwords.forEach((password) => {
+    password.addEventListener("input", () => {
+      const pass = document.querySelector("#password");
+      const confirmPass = document.querySelector("#confirm-password");
+      const msg = document.querySelector(".wrong-password-msg");
+
+      if (pass.value != confirmPass.value) {
+        msg.style.opacity = 1;
+        document.documentElement.style.setProperty("--color", "#C8524A");
+        document.documentElement.style.setProperty("--passColor", "#C8524A");
+        return;
+      }
+      document.documentElement.style.setProperty("--color", "#2457D8");
+      document.documentElement.style.setProperty("--passColor", "#D4D4D4");
+      msg.style.opacity = 0;
+    });
+  });
+</script>
+</html>
