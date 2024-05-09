@@ -54,6 +54,7 @@ header .left-header {
 
   font-family: norsebold;
   font-size: 5em;
+  
   margin: auto 0;
 }
 
@@ -90,7 +91,6 @@ header .right-header {
 
 .right-header div p {
   font-size: 1.5em;
-
   margin-bottom: 8px;
 }
 
@@ -133,7 +133,6 @@ form ul li {
 
 form ul li label {
   display: block;
-
   margin-bottom: 5px;
 }
 
@@ -161,7 +160,6 @@ form ul li input:focus,
 ul li #password:focus,
 ul li #confirm-password:focus {
   border-color: var(--color);
-
   box-shadow: 3px 3px 5px 0px rgb(0 0 0 / 20%);
 }
 
@@ -195,6 +193,5 @@ form ul li input:invalid {
 
 .right-header button + p a {
   color: #5A6D49;
-
   text-decoration: none;
 }
