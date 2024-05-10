@@ -49,11 +49,12 @@
           <li> 
             <label for="password">Password</label>
             <input type="password" id="password" name="password">
-            <label for="password" class="wrong-password-msg">* Password do not match</label>
+            <label for="password" id="password-msg">* Password do not match</label>
           </li>
           <li>
             <label for="confirm-password">Confirm Password</label>
             <input type="password" id="confirm-password" name="confirm-password">
+            <label for="password" id="confirm-password-msg">* Password do not match</label>
           </li>
         </ul>
       </form>
@@ -74,17 +75,18 @@
     password.addEventListener("input", () => {
       const pass = document.querySelector("#password");
       const confirmPass = document.querySelector("#confirm-password");
-      const msg = document.querySelector(".wrong-password-msg");
+      // const msg1 = document.querySelector("#password-msg");
+      // const msg2 = document.querySelector("#confirm-password-msg");
 
       if (pass.value != confirmPass.value) {
-        msg.style.opacity = 1;
+        document.documentElement.style.setProperty("--opacity", "1");
         document.documentElement.style.setProperty("--color", "#C8524A");
         document.documentElement.style.setProperty("--passColor", "#C8524A");
         return;
       }
       document.documentElement.style.setProperty("--color", "#2457D8");
       document.documentElement.style.setProperty("--passColor", "#D4D4D4");
-      msg.style.opacity = 0;
+      document.documentElement.style.setProperty("--opacity", "0");
     });
   });
 </script>
